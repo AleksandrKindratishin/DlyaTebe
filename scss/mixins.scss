@@ -1,0 +1,19 @@
+@mixin blocks-title {
+    text-align: center;
+    font-family: $main-font-family;
+    font-weight: $main-font-weight;
+    font-size: $blocks-title-size;
+}
+
+@mixin desc-styles {
+    font-family: $main-font-family;
+    font-weight: $second-font-weight;
+    font-size: $main-size;
+}
+
+@mixin botton-btn-styles {
+    width: 264px;
+    height: 72px;
+    border-radius: 0px 25px 25px 25px;
+    padding: 25px;
+}
