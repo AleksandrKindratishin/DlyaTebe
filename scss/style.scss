@@ -2,3 +2,69 @@
 @import 'variables';
 @import 'mixins';
 
+// --------------------------------------------------
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+// ----------------------------------------------------
+
+._conteiner {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    height: 100px;
+}
+
+.header__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 428px;
+        }
+
+        .nav-arrow {
+            margin-top: 5px;
+        }
+
+        .header__flex-conteiner {
+            display: flex;
+            justify-content: space-between;
+            width: 540px;
+            align-items: center;
+        }
+
+        .nav__link {
+            font-family: $main-font-family;
+            font-size: $menu-size;
+            color: $menu-color;
+            font-weight: $main-font-weight;
+        }
+
+        .languages__ua {
+            border: 3px  #EEF8FD solid;
+            border-radius: 25px 0px 0px 25px;
+            padding: 7px;
+            color: $text-desc-color;
+        }
+
+        .languages__en {
+            background: #EEF8FD;
+            border: 3px  #EEF8FD solid;
+            padding: 7px;
+            border-radius: 0px 25px 25px 0px;
+            color: $text-desc-color;
+        }
+}
