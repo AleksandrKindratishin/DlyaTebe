@@ -18,6 +18,7 @@
     box-sizing: border-box;
 }
 
+// ------------------------HEADER-----------------------------
 
 .header {
     height: 100px;
@@ -27,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
 
 
         ul {
@@ -50,7 +52,7 @@
             font-family: $main-font-family;
             font-size: $menu-size;
             color: $menu-color;
-            font-weight: $main-font-weight;
+            font-weight: $post-second-font-weight;
         }
 
         .languages__ua {
@@ -58,6 +60,8 @@
             border-radius: 25px 0px 0px 25px;
             padding: 7px;
             color: $text-desc-color;
+            font-weight: $post-second-font-weight;
+            font-family: $main-font-family;
         }
 
         .languages__en {
@@ -66,5 +70,121 @@
             padding: 7px;
             border-radius: 0px 25px 25px 0px;
             color: $text-desc-color;
+            font-weight: $post-second-font-weight;
+            font-family: $main-font-family;
         }
+}
+
+
+// ------------------------BANNER-----------------------------
+
+
+.banner {
+    background-image: url(../images/banner/banner-img.png);
+    height: 1080px;
+    
+}
+
+.banner__conteiner {
+
+    .banner__description {
+        padding-top: 348px;
+        width: 600px;
+        line-height: 63px;
+
+        h1 {
+            font-size: $title-size;
+            color: $title-color;
+            font-family: $main-font-family;
+            font-weight: $main-font-weight;
+        }
+
+        p {
+            @include desc-styles;
+            color: $title-color;
+            font-family: $main-font-family;
+            margin-bottom: 24px;
+        }
+
+        a {
+            font-family: $main-font-family;
+            font-weight: $post-second-font-weight;
+            color: $title-color;
+            font-size: $btn-tg-size;
+            padding: 28px 40px;
+            background: linear-gradient(91.2deg, #21B8FF 0.86%, #49C5FF 99.38%);
+            box-shadow: 0px 5px 17px rgba(36, 36, 36, 0.1);
+            border-radius: 0px 25px 25px 25px;
+        }
+    }
+}
+
+
+
+// ------------------------PARTNERS-----------------------------
+
+
+.partners__conteiner {
+
+    h2 {
+        @include blocks-title;
+        margin-top: 68px;
+        height: 206px;
+    }
+}
+
+
+// ------------------------ABOUT-----------------------------
+
+
+
+.about {
+    background-image: url(../images/about/about-bg.svg);
+}
+
+.about__conteiner {
+
+    h2{
+        @include blocks-title;
+        padding-top: 200px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    li {position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        @include desc-styles;
+        line-height: 27px;
+        width: 452px;
+    }
+
+    .block__img {
+        
+        z-index: 5;
+    }
+
+    .elips1 {
+        position: absolute;
+        top: 165px;
+    }
+
+    .elips2 {
+        position: absolute;
+        top: 165px;
+        left: 785px;
+    }
+
+    .elips3 {
+        position: absolute;
+        top: 165px;
+    }
 }
