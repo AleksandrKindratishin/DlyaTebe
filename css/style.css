@@ -157,6 +157,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
   background-image: url(../images/banner/banner-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 1080px;
 }
 
@@ -203,6 +206,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   background-image: url(../images/about/about-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about__conteiner h2 {
