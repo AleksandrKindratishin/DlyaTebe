@@ -239,3 +239,66 @@
 
 
 // ------------------------TEAM-----------------------------
+
+
+
+.team__conteiner {
+    height: 883px;
+
+    h2 {
+        @include blocks-title;
+        padding-top: 100px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+            .item-two {
+                margin-top: 125px;
+            }
+
+            .item-three {
+                margin-top: 200px;
+            }
+    }
+    img {
+        width: 360px;
+        height: 377px;
+    }
+
+    li {
+        position: relative;
+    }
+
+    .list__desc {
+        position: absolute;
+        width: 267px;
+        height: 146px;
+        background: #FFFFFF;
+        border-radius: 0px 25px 25px 25px;
+        top: 310px;
+        left: 32px;
+
+            h3 {
+                margin-top: 30px;
+                font-size: $btn-tg-size;
+                font-weight: $main-font-weight;
+                font-family: $main-font-family;
+                line-height: 27px;
+                letter-spacing: 0.5px;  
+                color: $text-desc-color;
+            }
+
+            p {
+                margin-top: 16px;
+                font-family: $main-font-family;
+                color: $job_color;
+                line-height: 22px;
+                letter-spacing: 0.5px;
+                font-weight: $main-font-weight;
+                font-size: $main-size;
+            }
+    }
+}
