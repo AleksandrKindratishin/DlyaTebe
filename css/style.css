@@ -483,6 +483,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  padding-bottom: 72px;
 }
 .connection__conteiner .connection__wrapper .social .social__wrapper {
   display: -webkit-box;
@@ -495,4 +496,87 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__conteiner {
+  margin-top: 50px;
+}
+.footer__conteiner .footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 82px;
+  border-bottom: 2px solid rgba(36, 36, 36, 0.2509803922);
+}
+.footer__conteiner .footer__top .footer__desription h4 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 16px;
+  color: #242424;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.1px;
+  letter-spacing: 0.2px;
+}
+.footer__conteiner .footer__top .footer__desription p {
+  color: rgba(36, 36, 36, 0.6980392157);
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.1px;
+  letter-spacing: 0.2px;
+  width: 360px;
+  margin-top: 15px;
+}
+.footer__conteiner .footer__top .footer__contacts {
+  text-align: right;
+}
+.footer__conteiner .footer__top .footer__contacts h4 {
+  color: #242424;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.footer__conteiner .footer__top .footer__contacts p {
+  color: #242424;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.footer__conteiner .footer__top .footer__contacts .footer__adress {
+  display: inline-block;
+}
+.footer__conteiner .footer__top .footer__contacts .footer__phone {
+  display: inline-block;
+}
+.footer__conteiner .footer__top .footer__contacts .footer__email {
+  display: inline-block;
+}
+.footer__conteiner .footer__copyright-block {
+  height: 70px;
+}
+.footer__conteiner .footer__copyright-block .footer__copyright-text {
+  margin-top: 39px;
+  color: #242424;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.2px;
 }

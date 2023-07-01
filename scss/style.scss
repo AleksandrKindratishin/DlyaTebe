@@ -431,6 +431,7 @@
                 width: 394px;
                 justify-content: space-between;
                 margin: 0 auto;
+                padding-bottom: 72px;
 
                     .social__wrapper {
                         display: flex;
@@ -441,3 +442,100 @@
     }
 }
 
+
+
+
+// ------------------------FOOTER-----------------------------
+
+
+
+.footer__conteiner {
+    margin-top: 50px;
+
+        .footer__top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 82px;
+            border-bottom: 2px solid #24242440;
+
+                .footer__desription {
+                    h4 {
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-left: 16px;
+                        color: $text-desc-color;
+                        font-size: $main-size;
+                        font-family: $main-font-family;
+                        font-style: normal;
+                        font-weight: $main-font-weight;
+                        line-height: 24.1px;
+                        letter-spacing: 0.2px;
+                    }
+
+                    p {
+                        color: $job_color;
+                        font-size: $main-size;
+                        font-family: $main-font-family;
+                        font-style: normal;
+                        font-weight: $second-font-weight;
+                        line-height: 24.1px;
+                        letter-spacing: 0.2px;
+                        width: 360px;
+                        margin-top: 15px;
+                    }
+                }
+
+                .footer__contacts {
+                    text-align: right;
+                    h4 {
+                        color: $text-desc-color;
+                        font-size: $main-size;
+                        font-family: $main-font-family;
+                        font-style: normal;
+                        font-weight: $main-font-weight;
+                        line-height: 26px;
+                        letter-spacing: 0.2px;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: $text-desc-color;
+                        font-size: $main-size;
+                        font-family: $main-font-family;
+                        font-style: normal;
+                        font-weight: $second-font-weight;
+                        line-height: 26px;
+                        letter-spacing: 0.2px;
+                        margin-bottom: 15px;
+                        margin-right: 10px;
+                    }
+
+                    .footer__adress {
+                        display: inline-block;
+                    }
+
+                    .footer__phone {
+                        display: inline-block;
+                    }
+
+                    .footer__email {
+                        display: inline-block;
+                    }
+                }
+        }
+
+        .footer__copyright-block {
+            height: 70px;
+
+                .footer__copyright-text {
+                    margin-top: 39px;
+                    color: $text-desc-color;
+                    font-size: $main-size;
+                    font-family: $main-font-family;
+                    font-style: normal;
+                    font-weight: $second-font-weight;
+                    line-height: 26px;
+                    letter-spacing: 0.2px;
+                }
+        }
+}
