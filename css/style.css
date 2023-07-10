@@ -204,6 +204,35 @@ h1, h2, h3, h4, h5, h6 {
   height: 206px;
 }
 
+.carousel-slide img {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
 .about {
   background-image: url(../images/about/about-bg.svg);
   background-repeat: no-repeat;
