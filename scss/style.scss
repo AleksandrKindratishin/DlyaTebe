@@ -259,8 +259,29 @@
     h2 {
         @include blocks-title;
         margin-top: 98px;
-        height: 206px;
-        margin-bottom: 890px; // временно
+        margin-bottom: 50px;
+    }
+
+    .projects__albom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+                            'projects__photo1 projects__photo2'
+                            'projects__photo1 projects__photo3';
+        
+    }
+
+    .projects__photo1 {
+        grid-area: projects__photo1;
+    }
+
+    .projects__photo2 {
+        grid-area: projects__photo2;
+    }
+
+    .projects__photo3 {
+        grid-area: projects__photo3;
     }
 }
 

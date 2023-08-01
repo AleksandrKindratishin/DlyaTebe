@@ -324,8 +324,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 34px;
   margin-top: 98px;
-  height: 206px;
-  margin-bottom: 890px;
+  margin-bottom: 50px;
+}
+.projects__conteiner .projects__albom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+      grid-template-areas: "projects__photo1 projects__photo2" "projects__photo1 projects__photo3";
+}
+.projects__conteiner .projects__photo1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: projects__photo1;
+}
+.projects__conteiner .projects__photo2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: projects__photo2;
+}
+.projects__conteiner .projects__photo3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: projects__photo3;
 }
 
 .team__conteiner {
