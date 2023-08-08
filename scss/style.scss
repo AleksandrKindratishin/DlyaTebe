@@ -255,39 +255,49 @@
 
 
 .projects__conteiner {
-    
-    .projects__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+
 
     h2 {
         @include blocks-title;
         margin-top: 98px;
         margin-bottom: 50px;
+        margin-bottom: 14px;
     }
 
-    .projects__albom {
+    .swiper-container {
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project__desc-wrapper {
+        width: 456px;
+    }
+
+    .project__albom {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-        'projects__photo1 projects__photo2'
-        'projects__photo1 projects__photo3';
+        'project__img1 project__img2'
+        'project__img1 project__img3';
     }
 
-    .projects__photo1 {
-        grid-area: projects__photo1;
-        margin-right: -50px;
+    .project__img1 {
+        grid-area: project__img1;
+        margin-right: -70px;
     }
 
-    .projects__photo2 {
-        grid-area: projects__photo2;
-        margin-bottom: -50px;
+    .project__img2 {
+        grid-area: project__img2;
     }
 
-    .projects__photo3 {
-        grid-area: projects__photo3;
+    .project__img3 {
+        grid-area: project__img3;
+        margin-top: -65px;
     }
 
     h3 {
@@ -306,10 +316,42 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 27px; /* 150% */
+        line-height: 150%; /* 27px */
         letter-spacing: 0.5px;
-        margin-top: 14px;
     }
+
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        max-width: 1128px;
+        margin: 0 auto;
+      }
+      
+      .carousel {
+        min-width: 1128px;
+        display: flex;
+        transition: transform 0.4s ease-in-out; 
+      }
+      
+      .carousel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      
+      .prev-button,
+      .next-button {
+        margin-top: 10px;
+        position: absolute;
+      }
+      
+      .prev-button {
+        left: 10px;
+      }
+      
+      .next-button {
+        right: 10px;
+      }
+      
 
 }
 
