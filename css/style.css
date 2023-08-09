@@ -485,7 +485,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Roboto;
   font-weight: 700;
   font-size: 34px;
-  margin-bottom: 958px;
+}
+.awards__conteiner .awards__slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.awards__conteiner .awards__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  will-change: transform;
+}
+.awards__conteiner .awards__slides img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .help__conteiner {
