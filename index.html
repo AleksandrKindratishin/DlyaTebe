@@ -19,22 +19,29 @@
                 
                 <div class="header__flex-conteiner">
                     <a href="#" class="header__logo">
-                        <img class="logo" src="images/logo/Logo.png" alt="">
+                        <img class="logo" src="images/logo/LogoDlyaTebe.svg" alt="">
                     </a>
 
                     <nav class="header__nav nav">
                         <ul class="nav__items">
-                            <li class="nav__item">
+                            <li class="nav__item dropdown">
                                 <a href="#" class="nav__link">Про Нас</a>
                                 <img class="nav-arrow" src="images/nav_arrow/arrow_nav.svg" alt="">
+                                <ul class="submenu">
+                                    <li><a href="#partners" class="nav__link">Наші Партнери</a></li>
+                                    <li><a href="#about" class="nav__link">Про Фонд</a></li>
+                                    <li><a href="#projects" class="nav__link">Наші Проекти</a></li>
+                                    <li><a href="#team" class="nav__link">Наша Командa</a></li>
+                                    <li><a href="#awards" class="nav__link">Наші Досягнення</a></li>
+                                </ul>
                             </li>
 
                             <li class="nav__item">
-                                <a href="#" class="nav__link">Допомогти Фонду</a>
+                                <a href="#help" class="nav__link">Допомогти Фонду</a>
                             </li>
 
                             <li class="nav__item">
-                                <a href="#" class="nav__link">Зв’язатись з Нами</a>
+                                <a href="#call" class="nav__link">Зв’язатись з Нами</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,16 +62,16 @@
                         <h1 class="banner__title">Благодійна Організація “Благодійний Фонд
                             Для Тебе”</h1>
                         <p class="banner__subtitle">Рятуємо життя впродовж 5 років</p>
-                        <a href="#" class="banner__btn">Зв’язатись з нами</a>
+                        <a href="#call" class="banner__btn">Зв’язатись з нами</a>
                     </div>
                 </div>
             </section>
 
-            <section class="partners">
+            <section class="partners" id="partners">
                 <div class="partners__conteiner _conteiner">
                     <h2 class="partners__title">Наші Партнери</h2>
                     <div class="carousel-slide">
-                        <img src="images/partners/5435 1.svg">
+                        <img style="width: 80px; height: 80px;" src="images/partners/5435 1.svg">
                         <img src="images/partners/Frame 12.svg">
                         <img src="images/partners/Frame 13.svg">
                         <img src="images/partners/Frame 14.svg">
@@ -79,12 +86,12 @@
                         <img src="images/partners/Frame 31.svg">
                         <img src="images/partners/Frame 69.svg">
                         <img src="images/partners/Frame 70.svg">
-                        <img src="images/partners/image 9.svg">
+                        <img style="width: 80px; height: 80px;" src="images/partners/image 9 (2).svg">
                     </div>
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__conteiner _conteiner">
                     <h2 class="about__title">Про Фонд</h2>
                     <ul class="about__blocks">
@@ -119,7 +126,7 @@
                 </div>
             </section>
 
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="projects__conteiner _conteiner">
                     <h2 class="projects__title">Наші Проекти</h2>
 
@@ -198,12 +205,12 @@
                 </div>
             </section>
 
-            <section class="team">
+            <section class="team" id="team">
                 <div class="team__conteiner _conteiner">
                     <h2 class="team__title">Наша Команда</h2>
                     <ul class="team__list list">
                         <li class="list__item">
-                            <img src="images/team/team1.png" alt="" class="list__img">
+                            <img src="images/team/team1.svg" alt="" class="list__img">
                             <div class="list__desc">
                                 <h3 class="list__name">Ксенія Артамонова</h3>
                                 <p class="list__subname">Керівник фонду, Засновник</p>
@@ -211,7 +218,7 @@
                         </li>
 
                         <li class="list__item item-two">
-                            <img src="images/team/team2.png" alt="" class="list__img">
+                            <img src="images/team/team2.svg" alt="" class="list__img">
                             <div class="list__desc">
                                 <h3 class="list__name">Олеся Науменко</h3>
                                 <p class="list__subname">Керівник благодійних проектів, Засновник</p>
@@ -219,7 +226,7 @@
                         </li>
 
                         <li class="list__item item-three">
-                            <img src="images/team/team3.png" alt="" class="list__img">
+                            <img src="images/team/team3.svg" alt="" class="list__img">
                             <div class="list__desc">
                                 <h3 class="list__name">Анастасія Шутяк</h3>
                                 <p class="list__subname">Менеджер інтернет проектів</p>
@@ -229,7 +236,7 @@
                 </div>
             </section>
 
-            <section class="awards">
+            <section class="awards" id="awards">
                 <div class="awards__conteiner _conteiner">
                     <h2 class="awards__title">Наші Досягнення</h2>
                     <div class="awards__slider">
@@ -246,39 +253,45 @@
                 </div>
             </section>
 
-            <section class="help">
+            <section class="help" id="help">
                 <div class="help__conteiner _conteiner">
                     <h2 class="help__title">Допомогти фонду</h2>
                     <div class="help__wrapper">
                         <div class="help__description description">
                             <h3 class="description__title">Допомогти фонду</h3>
                                 <p class="description__text">Зробити внесок у здорове майбутнє</p>
-                                <a href="#" class="description__btn">Допомогти фонду</a>
+                                <a href="https://mssg.me/nfcwg" class="description__btn">Допомогти фонду</a>
                         </div>
                         <img src="images/help/help-img.png" alt="help-img" class="help__image">
                     </div>
                 </div>
             </section>
 
-            <section class="connection">
+            <section class="connection" id="call">
                 <div class="connection__conteiner _conteiner">
                     <div class="connection__wrapper">
                         <h2 class="connection__title">Для зв’язку</h2>
-                        <p class="connection__text">Якщо у вас виникли питання або пропозиції щодо співпраці, ви завжди можете зв’язатися з нами</p>
+                        <p class="connection__text">Якщо у вас виникли питання або пропозиції щодо співпраці, ви завжди можете  зв’язатися з нами</p>
                         <a href="#" class="connection__btn">Зв’язатись з нами</a>
                         <div class="connection__social social">
                             <div class="social__wrapper">
-                                <img src="images/connection/facebook.svg" alt="" class="social__img">
+                                <a href="https://www.facebook.com/dlyatebe.dnepr" class="connection__link">
+                                    <img src="images/connection/facebook.svg" alt="" class="social__img">
+                                </a>
                                 <p class="social__text">Facebook</p>
                             </div>
 
                             <div class="social__wrapper">
-                                <img src="images/connection/instagramm.svg" alt="" class="social__img">
+                                <a href="https://instagram.com/fond_dlya_tebe_dnepr?igshid=MzRlODBiNWFlZA==" class="connection__link">
+                                    <img src="images/connection/instagramm.svg" alt="" class="social__img">
+                                </a>
                                 <p class="social__text">Instagram</p>
                             </div>
 
                             <div class="social__wrapper">
-                                <img src="images/connection/telegram.svg" alt="" class="social__img">
+                                <a href="" class="connection__link">
+                                    <img src="images/connection/telegram.svg" alt="" class="social__img">
+                                </a>
                                 <p class="social__text">Telegram</p>
                             </div>
                         </div>
@@ -326,5 +339,9 @@
   <script src="js/projects.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/awords.js"></script>
+  <script src="js/modal-menu.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+  <script src="js/about.js"></script>
 </body>
 </html>
