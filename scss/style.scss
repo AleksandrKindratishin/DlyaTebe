@@ -4,19 +4,18 @@
 
 // --------------------------------------------------
 
-
-
-@media (min-width: 1280px) and (max-width: 1920px) {
-
-    .wrapper {
-    min-height: 100%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    // min-height: 100%;
+    position: relative;
     overflow: hidden;
 }
 
 // ----------------------------------------------------
 
 ._conteiner {
-    max-width: 1128px;
+    max-width: 1285px;
     margin: 0 auto;
     padding: 0px 15px;
     box-sizing: border-box;
@@ -25,14 +24,14 @@
 // ------------------------HEADER-----------------------------
 
 .header {
-    height: 100px;
+    height: 101px;
 }
 
 .header__conteiner {
+    height: 101px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
 
 
         ul {
@@ -56,7 +55,7 @@
             font-family: $main-font-family;
             font-size: $menu-size;
             color: $menu-color;
-            font-weight: $post-second-font-weight;
+            font-weight: $main-font-weight;
         }
 
         .languages__ua {
@@ -64,7 +63,6 @@
             border-radius: 25px 0px 0px 25px;
             padding: 7px;
             color: $text-desc-color;
-            font-weight: $post-second-font-weight;
             font-family: $main-font-family;
         }
 
@@ -74,35 +72,45 @@
             padding: 7px;
             border-radius: 0px 25px 25px 0px;
             color: $text-desc-color;
-            font-weight: $post-second-font-weight;
             font-family: $main-font-family;
         }
 
+        
+
         .submenu {
             display: none;
-            position: absolute;
+            position: fixed;
             border-radius: 25px;
             border: 1px solid rgba(36, 36, 36, 0.20);
             background: #FFF;
             padding: 24px 28px;
             align-items: center;
             gap: 10px;
-            z-index: 1000;
+            z-index: 1000000000;
             width: auto;
         }
         
         .dropdown.active .submenu {
+            z-index: 100000;
             display: block;
         }
         
         .submenu li {
             margin: 0;
+            font-family: $main-font-family;
+            font-size: $menu-size;
+            color: $menu-color;
+            font-weight: $main-font-weight;
         }
         
         .submenu a {
             display: block;
             padding: 10px 20px;
             text-decoration: none;
+            font-family: $main-font-family;
+            font-size: $menu-size;
+            color: $menu-color;
+            font-weight: $main-font-weight;
         }
         
         /* Дополнительный стиль для стрелки */
@@ -113,6 +121,10 @@
         }
 
         .nav__link:hover {
+            color: black;
+        }
+
+        .submenu a:hover {
             color: black;
         }
 }
@@ -410,6 +422,26 @@
       .next-button {
         right: 10px;
       }
+
+
+      .swiper-pagination {
+        position: relative;
+        bottom: 10px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
       
 
 }
@@ -489,28 +521,26 @@
 
     h2 {
         @include blocks-title;
+        margin-bottom: 74px;
         
     }
 
-    .awards__slider {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        display: flex;
-    }
-    
-    .awards__slides {
-        display: flex;
-        transition: transform 0.4s ease-in-out;
-        will-change: transform;
-    }
-    
-    .awards__slides img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+    /* Добавьте стили для Swiper */
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: calc(100% / 3); /* Распределение на 3 элемента в ряду */
+    float: left;
+    padding-right: 10px; /* Отступ между слайдами */
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    display: block;
+}
 }
 
 
@@ -749,10 +779,4 @@
                 }
         }
 }
-
-}
-
-
-
-
 
