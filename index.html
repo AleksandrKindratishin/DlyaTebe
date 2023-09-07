@@ -10,17 +10,24 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
 
-        <header class="header">
+    <header class="header">
             <div class="header__conteiner _conteiner">
 
                 <div class="header__flex-conteiner">
                     <a href="#" class="header__logo">
                         <img class="logo" src="images/logo/LogoDlyaTebe.svg" alt="">
                     </a>
+
+                    <div class="header__burger-btn" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
                     <nav class="header__nav nav">
                         <ul class="nav__items">
@@ -46,6 +53,9 @@
                             </li>
                         </ul>
                     </nav>
+
+                    
+
                 </div>
 
                 <div class="header__languages languages">
@@ -53,9 +63,12 @@
                     <a href="" class="languages__en">EN</a>
                 </div>
             </div>
-        </header>
 
-    </div>
+    </header>
+
+
+        <!-- --------- -->
+
 
         <main class="main">
 
@@ -105,12 +118,13 @@
                                 Основним напрямком роботи фонду є лікування важко хворих новонароджених дітей. 
                                 Головна мета нашої діяльності - здорова нація. Наша праця направлена на зменшення відсотоку дитячої смертності та розвитку патологічних захворювань, дитячої інвалідності на території України. Ми сприяємо праці реабілітаційних центрів і інтернатів для дітей із інвалідністю.</p>
                         </li>
-                        <li class="about__block block">
-                            <p class="block__desc">Всеукраїнський благодійний фонд «Для тебе» був створений у 2018р. для надання допомоги дітям, хворим від народження, лікарням, установам, дітям позбавлених батьківського піклування та нужденним категоріям населення.
-                                Основним напрямком роботи фонду є лікування важко хворих новонароджених дітей. 
-                                Головна мета нашої діяльності - здорова нація. Наша праця направлена на зменшення відсотоку дитячої смертності та розвитку патологічних захворювань, дитячої інвалідності на території України. Ми сприяємо праці реабілітаційних центрів і інтернатів для дітей із інвалідністю.</p>
+                        <li class="about__block block block-revers">
                             <img src="images/about/about2.png" alt="" class="block__img">
                             <img src="images/about/elips.svg" alt="" class="elips2">
+                            <p class="block__desc desc-revers">Всеукраїнський благодійний фонд «Для тебе» був створений у 2018р. для надання допомоги дітям, хворим від народження, лікарням, установам, дітям позбавлених батьківського піклування та нужденним категоріям населення.
+                                Основним напрямком роботи фонду є лікування важко хворих новонароджених дітей. 
+                                Головна мета нашої діяльності - здорова нація. Наша праця направлена на зменшення відсотоку дитячої смертності та розвитку патологічних захворювань, дитячої інвалідності на території України. Ми сприяємо праці реабілітаційних центрів і інтернатів для дітей із інвалідністю.</p>
+                            
                         </li>
                         <li class="about__block block">
                             <img src="images/about/about3.png" alt="" class="block__img">
@@ -244,34 +258,17 @@
             <section class="awards" id="awards">
                 <div class="awards__conteiner _conteiner">
                     <h2 class="awards__title">Наші Досягнення</h2>
-                    <div class="awards__slider swiper-container">
-                        <div class="awards__slides swiper-wrapper">
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards1min.svg" alt="Image 1">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards2min.svg" alt="Image 2">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards3.svg" alt="Image 3">
-                            </div>  
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards4.svg" alt="Image 4">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards5.svg" alt="Image 5">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards6.svg" alt="Image 6">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards7.svg" alt="Image 7">
-                            </div>
-                            <div class="awards__slide swiper-slide">
-                                <img src="images/awards/awards8.svg" alt="Image 8">
-                            </div>
+                    <div class="awards__slider">
+                        <div class="awards__slides">
+                            <img src="images/awards/awards1min.svg" alt="Image 1">
+                            <img src="images/awards/awards2min.svg" alt="Image 2">
+                            <img src="images/awards/awards3.svg" alt="Image 3">
+                            <img src="images/awards/awards4.svg" alt="Image 4">
+                            <img src="images/awards/awards5.svg" alt="Image 5">
+                            <img src="images/awards/awards6.svg" alt="Image 6">
+                            <img src="images/awards/awards7.svg" alt="Image 7">
+                            <img src="images/awards/awards8.svg" alt="Image 8">
                         </div>
-                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
             </section>
@@ -354,8 +351,13 @@
                 </div>
             </div>
         </footer>
+</div>
 
-    </div>
+        
+
+        
+
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script src="js/partners.js"></script>
@@ -366,5 +368,6 @@
   <script src="js/menu.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
   <script src="js/about.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 </html>

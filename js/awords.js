@@ -1,15 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper('.awards__slider', {
-        slidesPerView: 3, // Отображаем 3 слайда одновременно
-        spaceBetween: 10, // Отступ между слайдами
-        loop: true, // Зацикливаем карусель
-        loopedSlides: 8, // Количество дополнительных слайдов, чтобы карусель начинала заново
-        autoplay: {
-            delay: 10000, // Прокручивать каждые 10 секунд
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    const awardsSlider = document.querySelector('.awards__slides');
+    const slideWidth = awardsSlider.firstElementChild.clientWidth;
+    const totalSlides = awardsSlider.children.length;
+
+    awardsSlider.style.width = `${slideWidth * totalSlides}px`; // Устанавливаем общую ширину слайдера
+
+    function slide() {
+        awardsSlider.style.transition = 'transform 0.5s ease-in-out';
+        awardsSlider.style.transform = `translateX(-${slideWidth}px)`; // Смещаем слайды на ширину одного слайда
+    }
+
+    function resetSlide() {
+        awardsSlider.style.transition = 'none';
+        awardsSlider.style.transform = 'translateX(0)'; // Возвращаем слайдер в начальное положение
+        setTimeout(slide, 10); // Смещаем слайдер после сброса анимации
+    }
+
+    slide(); // Запускаем первую прокрутку
+
+    setInterval(resetSlide, 30000); // Сбрасываем слайдер каждые 30 секунд
 });
+
